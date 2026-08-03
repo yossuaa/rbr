@@ -15,7 +15,8 @@ Route::get('/frontend.event', [EventController::class, 'index'])->name('event');
 Route::get('/frontend.galeri', [GaleriController::class, 'index'])->name('galeri');
 Route::get('/frontend.kontaklokasi', [ContactLocationController::class, 'index'])->name('kontaklokasi');
 Route::get('/frontend.reservation', [ReservationController::class, 'index'])->name('reservation');
-Route::post('/frontend.reservation', [ReservationController::class, 'store'])->name('reservation.store');
+Route::post('/frontend.reservation', [ReservationController::class, 'store'])
+    ->name('frontend.reservation.store');
 Route::get('/reservation/{id}/pdf', [ReservationController::class, 'generatePdf'])->name('reservation.pdf');
 
 // PROFILE PAGE

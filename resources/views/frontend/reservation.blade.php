@@ -40,8 +40,8 @@
       <p class="text-sm text-gray-600 mb-6 text-center">Isi data untuk reservasi kunjungan</p>
 
       <!-- FORM -->
-      <form action="{{ route('reservation.store') }}" method="POST"
-            class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+      <<form action="{{ route('frontend.reservation.store') }}" method="POST"
+      class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
         @csrf
 
         <!-- KIRI -->
