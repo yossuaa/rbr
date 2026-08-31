@@ -13,10 +13,6 @@
 
     <!-- Menu -->
     <div class="flex space-x-10 text-white text-sm font-marcellus">
-        <a href="{{ route('homepage') }}"
-        class="{{ Route::currentRouteName() == 'homepage' ? 'text-yellow-300' : 'text-white' }} hover:text-red-700 transition duration-200">
-        Home
-        </a>
 
         <a href="{{ route('profile') }}"
         class="{{ Route::currentRouteName() == 'profile' ? 'text-yellow-300' : 'text-white' }} hover:text-red-700 transition duration-200">
@@ -36,11 +32,6 @@
         <a href="{{ route('kontaklokasi') }}"
         class="{{ Route::currentRouteName() == 'kontaklokasi' ? 'text-yellow-300' : 'text-white' }} hover:text-red-700 transition duration-200">
         Kontak & Lokasi
-        </a>
-
-        <a href="{{ route('reservation') }}"
-        class="{{ Route::currentRouteName() == 'reservation' ? 'text-yellow-300' : 'text-white' }} hover:text-red-700 transition duration-200">
-        Reservation
         </a>
     </div>
 
@@ -73,8 +64,6 @@ function goSearch() {
     if (!q) return;
 
     const routes = {
-        'home': "{{ route('homepage') }}",
-        'beranda': "{{ route('homepage') }}",
 
         'profile': "{{ route('profile') }}",
         'profil': "{{ route('profile') }}",
@@ -88,8 +77,6 @@ function goSearch() {
         'kontak': "{{ route('kontaklokasi') }}",
         'lokasi': "{{ route('kontaklokasi') }}",
 
-        'reservasi': "{{ route('reservation') }}",
-        'reservation': "{{ route('reservation') }}"
     };
 
     for (const key in routes) {

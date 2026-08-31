@@ -45,15 +45,6 @@
                class="block p-1 rounded-lg bg-gray-800/50 border border-gray-700/60 hover:bg-gray-700 hover:border-indigo-400 hover:text-white transition">
                 Beranda
             </a>
-            <a href="{{ route('homepage-info.index') }}"
-               class="block p-1 rounded-lg bg-gray-800/50 border border-gray-700/60 hover:bg-gray-700 hover:border-indigo-400 hover:text-white transition">
-                Homepage Info
-            </a>
-
-            <a href="{{ route('homepage-features.index') }}"
-               class="block p-1 rounded-lg bg-gray-800/50 border border-gray-700/60 hover:bg-gray-700 hover:border-indigo-400 hover:text-white transition">
-                Homepage Features
-            </a>
             
             <a href="{{ route('profile.index') }}"
                class="block p-1 rounded-lg bg-gray-800/50 border border-gray-700/60 hover:bg-gray-700 hover:border-indigo-400 hover:text-white transition">

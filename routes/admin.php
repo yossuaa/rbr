@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminHomepageController;
-use App\Http\Controllers\Admin\HomepageInfoController;
-use App\Http\Controllers\Admin\HomepageFeatureController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\GaleriController;
@@ -16,23 +14,17 @@ use App\Http\Controllers\Admin\LoginController;
 // ===============================
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'login']);
+
 Route::post('/logout', function () {
     session()->forget('login');
     return redirect('/admin/login');
 });
-
 
 // ===============================
 // DASHBOARD
 // ===============================
 Route::get('/dashboard', [AdminHomepageController::class, 'index'])
     ->name('admin.dashboard');
-
-// ===============================
-// CRUD HOMEPAGE
-// ===============================
-Route::resource('homepage-info', HomepageInfoController::class);
-Route::resource('homepage-features', HomepageFeatureController::class);
 
 // ===============================
 // PROFILE
@@ -68,6 +60,7 @@ Route::post('galeri/foto/urutan', [GaleriController::class, 'updateUrutanFoto'])
 // Galeri User
 Route::get('galeri/user/{id_galeriuser}/edit', [GaleriController::class, 'editUser'])
     ->name('galeriUser.edit');
+
 Route::put('galeri/user/{id_galeriuser}', [GaleriController::class, 'updateUser'])
     ->name('galeriUser.update');
 

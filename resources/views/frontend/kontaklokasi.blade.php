@@ -53,18 +53,18 @@
                      data-aos-delay="200">
 
                     <div class="flex gap-3">
-                        <span class="text-lg">📍</span>
+                        <span class="text-lg"></span>
                         <p class="text-sm leading-relaxed">{{ $location->alamat }}</p>
                     </div>
 
                     <div class="flex gap-3">
-                        <span class="text-lg">🕒</span>
+                        <span class="text-lg"></span>
                         <p class="text-sm">{{ $location->open }}</p>
                     </div>
 
                     @if($location->instagram)
                     <div class="flex gap-3">
-                        <span class="text-lg">📷</span>
+                        <span class="text-lg"></span>
                         <a href="https://www.instagram.com/rumahbudayaratna"
                            target="_blank"
                            class="text-sm hover:underline">
@@ -76,24 +76,24 @@
                     <!-- ACTION -->
                     <div class="pt-6 grid grid-cols-3 gap-3">
                         <a href="https://wa.me/6281346514975" target="_blank"
-                           class="bg-white/10 hover:bg-white/20 rounded-lg p-3 text-xs text-center transition"
+                           class="bg-white/10 hover:bg-white/20 rounded-lg  p-2 text-xs text-center transition"
                            data-aos="zoom-in"
                            data-aos-delay="300">
-                            📞<br>WhatsApp
+                            WhatsApp
                         </a>
 
                         <a href="https://maps.app.goo.gl/AegCxDSs4p856Ywk8" target="_blank"
-                           class="bg-white/10 hover:bg-white/20 rounded-lg p-3 text-xs text-center transition"
+                           class="bg-white/10 hover:bg-white/20 rounded-lg p-2 text-xs text-center transition"
                            data-aos="zoom-in"
                            data-aos-delay="400">
-                            📍<br>Maps
+                            Maps
                         </a>
 
                         <a href="mailto:rumahbudayaratna@gmail.com"
-                           class="bg-white/10 hover:bg-white/20 rounded-lg p-3 text-xs text-center transition"
+                           class="bg-white/10 hover:bg-white/20 rounded-lg p-2 text-xs text-center transition"
                            data-aos="zoom-in"
                            data-aos-delay="500">
-                            ✉️<br>Email
+                            Email
                         </a>
                     </div>
 
