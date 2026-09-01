@@ -6,8 +6,40 @@
     },
     "routes": [
         {
-            "src": "/(.*)\\.(ico|txt|webp|png|jpg|jpeg|gif|svg|css|js|woff|woff2|ttf)$",
-            "dest": "/public/$1.$2"
+            "src": "/build/(.*)",
+            "dest": "/public/build/$1"
+        },
+        {
+            "src": "/profile/(.*)",
+            "dest": "/public/profile/$1"
+        },
+        {
+            "src": "/event/(.*)",
+            "dest": "/public/event/$1"
+        },
+        {
+            "src": "/galeri/(.*)",
+            "dest": "/public/galeri/$1"
+        },
+        {
+            "src": "/homepage/(.*)",
+            "dest": "/public/homepage/$1"
+        },
+        {
+            "src": "/lokasi/(.*)",
+            "dest": "/public/lokasi/$1"
+        },
+        {
+            "src": "/logo.png",
+            "dest": "/public/logo.png"
+        },
+        {
+            "src": "/favicon.ico",
+            "dest": "/public/favicon.ico"
+        },
+        {
+            "src": "/robots.txt",
+            "dest": "/public/robots.txt"
         },
         {
             "src": "/(.*)",
