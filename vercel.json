@@ -22,12 +22,12 @@
             "dest": "/public/galeri/$1"
         },
         {
-            "src": "/lokasi/(.*)",
-            "dest": "/public/lokasi/$1"
-        },
-        {
             "src": "/homepage/(.*)",
             "dest": "/public/homepage/$1"
+        },
+        {
+            "src": "/lokasi/(.*)",
+            "dest": "/public/lokasi/$1"
         },
         {
             "src": "/logo.png",
